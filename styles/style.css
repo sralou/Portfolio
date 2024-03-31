@@ -6,8 +6,6 @@ html {
   scroll-behavior: smooth;
 }
 
-@import url(https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400;1,700;1,900);
-
 /* ------------------------------------------------------------------------------
 	 Color
 -------------------------------------------------------------------------------*/
@@ -89,7 +87,7 @@ h5 {
 	color: var(--grey);
 	font-family: "Bebas Neue", sans-serif;
 	font-size: 4rem;
-	font-weight: 300;
+	font-weight: 400;
   }
   .animated-info {
 	min-height: 48px;
@@ -104,7 +102,7 @@ h5 {
 	color: var(--white);
 	font-family: "Bebas Neue", sans-serif;
 	font-size: 4rem;
-	font-weight: 300;
+	font-weight: 400;
   }
   
   .animated-item {
