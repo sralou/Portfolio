@@ -72,6 +72,17 @@ h5 {
 	color: var(--white);
 	text-decoration: none;
 }
+.btn-overlay {
+	border: var(--white) solid 1px;
+	color: var(--white);
+	font-size: 12px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	border-radius: 4px;
+	padding: 8px 12px;
+	display: inline-block;
+	text-transform: uppercase
+}
 .btn-large {
 	padding: 15px 40px;
 }
@@ -273,10 +284,35 @@ a:hover {
 	padding-right: 3rem;
 }
 
+.portrait {
+	display: block;
+	max-width:180px;
+	max-height:180px;
+	width: auto;
+	height: auto;
+	border-radius: 50%;
+	margin: 0 auto;
+}
+
 /* .about-me-text {
 	display: flex;
 }
 */
+
+.headline {
+	color: var(--grey);
+	font-family: "Bebas Neue", sans-serif;
+	font-size: 4rem;
+	font-weight: 400;
+  }
+.headline-info {
+	color: var(--white);
+	overflow: hidden;
+	min-width: 268px;
+	font-family: "Bebas Neue", sans-serif;
+	font-size: 4rem;
+	font-weight: 400;
+  }
 
 .title {
 	display: flex;
@@ -315,15 +351,90 @@ a:hover {
 	margin: 0;
 }
 
-img {
-	display: block;
-	max-width:180px;
-	max-height:180px;
-	width: auto;
-	height: auto;
-	border-radius: 50%;
-	margin: 0 auto;
+.project {
+	max-width: 720px;
 }
+
+.project .work-line-headline {
+	border-bottom: none;
+}
+
+/* .project img {
+	max-width: 720px;
+	margin: 0.8rem 0;
+} */
+
+.project-image {
+	position: relative;
+	width: 100%;
+	max-width: 720px;
+	margin: auto;
+	overflow: hidden;
+  }
+
+.content-overlay {
+	background: var(--secondary);
+	position: absolute;
+	height: 99%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	opacity: 0;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+  }
+  
+  .project-image:hover .content-overlay{
+	opacity: 0.8;
+  }
+  
+  .content-image{
+	width: 100%;
+  }
+
+  .content-details {
+	position: absolute;
+	text-align: center;
+	padding-left: 1em;
+	padding-right: 1em;
+	width: 100%;
+	top: 50%;
+	left: 50%;
+	opacity: 0;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	-moz-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+  }
+  
+  .content:hover .content-details{
+	top: 50%;
+	left: 50%;
+	opacity: 1;
+  }
+  
+  .content-details h3{
+	color: var(--white);
+	font-weight: 500;
+	/* letter-spacing: 0.15em; */
+	margin-bottom: 0.5em;
+	text-transform: uppercase;
+  }
+  
+  .content-details p{
+	color: var(--white);
+	font-size: 0.8em;
+  }
+  
+  .fadeIn-bottom{
+	top: 80%;
+  }
+  
 
 footer {
 	display: flex;
