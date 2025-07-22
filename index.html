@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="styles/style.css" /> 
-  <link rel="stylesheet" type="text/css" href="styles/queries.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles/theme.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap">
   <script src="https://kit.fontawesome.com/733c3e6546.js" crossorigin="anonymous"></script>
@@ -13,53 +12,173 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
 </head>
 <body>
+  
+  <!-- Theme Toggle & Language Toggle -->
+  <div class="toggle-container">
+    <button class="language-btn" id="langBtn-en" data-de="EN" data-en="DE">DE</button>
+    <input type="checkbox" class="toggle-checkbox" id="themeToggle">
+    <label for="themeToggle" class="toggle-label-switch">
+      <span class="toggle-inner"></span>
+      <span class="toggle-switch-element"></span>
+    </label>
+  </div>
+
   <header id="header">
     <div class="header-content clearfix"> 
-      <a class="logo" href="index.html">sf.ux</a>
-      <div class="links-block">
-        <a class="links" href="projects.html">Projekte</a>
-        <a class="links" href="#contact">Kontakt</a>
+      <a class="logo" href="index.html">sara fischer | ux professional</a>
+       <div class="links-block">
+        <!-- <a class="links" href="projects.html" data-de="Projekte" data-en="Projects">Projekte</a>
+        <a class="links" href="#contact" data-de="Kontakt" data-en="Contact">Kontakt</a> -->
       </div>
+    </div>
   </header>
+  
   <main class="content">
-
-<!-- Intro -->
-    
+    <!-- German Content -->
+    <div class="lang-content active" id="content-de">
+      <!-- Intro -->
       <div class="section">
-          <!-- <div class="animated-headline-wrapper"> -->
+        <div class="hero-section">
           <span class="animated-headline">Hi, ich bin </span>
-          <!-- </div> -->
-            <div class="animated-info">
-                <span class="animated-item">Sara.</span>
-                <span class="animated-item">UX Designer.</span>
-                <span class="animated-item">User Researcher.</span>
-                <span class="animated-item">Usability Engineer.</span>
-            </div>
-            <div class="about-me">
-              <div class="about-me-text">
-                <p>UX Professional aus Heidelberg mit über 9 Jahren Erfahrung in den Bereichen E-Commerce und SaaS.</p>
-                <a href="docs/CV_Sara-Fischer-2025_DE.pdf" target="_blank" class="btn">Lebenslauf ansehen</a> 
-              </div>
-              <img class="portrait" src="img/IMG_0022-square_high.jpg" alt="Portrait Sara Fischer">
-            </div>
+          <div class="animated-info">
+            <span class="animated-item">Sara.</span>
+            <span class="animated-item">UX Designer.</span>
+            <span class="animated-item">User Researcher.</span>
+            <span class="animated-item">Usability Engineer.</span>
+          </div>
+        </div>
+        <div class="about-me">
+          <div class="about-me-text">
+            <p>UX Designerin aus Heidelberg mit einem Faible für nutzerzentrierte digitale Produkte.<br><br>
+              Seit 2016 arbeite ich im Bereich UX und unterstütze Teams dabei, Interfaces zu gestalten, die nicht nur schön aussehen, sondern sich auch richtig gut anfühlen.<br>
+              Mit analytischem Blick, Kreativität und viel Erfahrung bringe ich Struktur ins Chaos und Nutzerbedürfnisse in den Fokus – von Research über Prototyping bis hin zu Design-Systemen.</p>
+            <a href="docs/CV_Sara-Fischer-2025_DE.pdf" target="_blank" class="btn-primary">Lebenslauf ansehen</a> 
+          </div>
+          <img class="portrait" src="img/IMG_0022-square_high.jpg" alt="Portrait Sara Fischer">
+        </div>
       </div>
 
-<!-- Contact -->
-
+      <!-- Contact -->
       <div class="section" id="contact">
-        <h3>Sie möchten ein Projekt starten? Kontaktieren Sie mich.</h3>
-        <a href="mailto:hello@sara-fischer.de" class="btn"><i class="fa-solid fa-at"></i>E-Mail senden</a>
-        <a href="https://www.linkedin.com/in/sfischerux" class="btn" target="_blank"><i class="fa-brands fa-linkedin"></i>Mein LinkedIn</a>
+        <h3>Sie möchten ein Projekt starten oder mein Portfolio einsehen? <br>Kontaktieren Sie mich.</h3>
+        <div>
+          <a href="mailto:hello@sara-fischer.de" class="btn-secondary"><i class="fa-solid fa-at"></i>E-Mail senden</a>
+          <a href="https://www.linkedin.com/in/sfischerux" class="btn-secondary" target="_blank"><i class="fa-brands fa-linkedin"></i>LinkedIn besuchen</a>
         </div>
+        
+        <!-- Contact Form -->
+        <!-- 
+        <div class="contact-form">
+          <h4 style="margin-bottom: 20px; text-align: center;">Oder schreiben Sie mir direkt:</h4>
+          <form action="contact.php" method="post" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name-de">Name *</label>
+                <input type="text" id="name-de" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email-de">E-Mail *</label>
+                <input type="email" id="email-de" name="email" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject-de">Betreff</label>
+              <input type="text" id="subject-de" name="subject" placeholder="Projektanfrage">
+            </div>
+            <div class="form-group">
+              <label for="message-de">Nachricht *</label>
+              <textarea id="message-de" name="message" placeholder="Erzählen Sie mir von Ihrem Projekt..." required></textarea>
+            </div>
+            <button type="submit" class="btn-submit">Nachricht senden</button>
+          </form>
+        </div>
+        -->
+      </div>
 
+      <!-- Footer -->
       <footer>
         <h4>© Sara Fischer 2025</h4>
-          <div class="footer-links">
-            <a href="impressum.html">Impressum</a>
-            <a href="datenschutz.html">Datenschutz</a>
-          </div>
+        <div class="footer-links">
+          <a href="impressum.html" data-de="Impressum" data-en="Legal Notice">Impressum</a>
+          <a href="datenschutz.html" data-de="Datenschutz" data-en="Privacy Policy">Datenschutz</a>
+        </div>
       </footer>
+    </div>
+
+    <!-- English Content -->
+    <div class="lang-content" id="content-en">
+      <!-- Intro -->
+      <div class="section">
+        <div class="hero-section">
+          <span class="animated-headline">Hi, I'm </span>
+          <div class="animated-info">
+            <span class="animated-item">Sara.</span>
+            <span class="animated-item">a UX Designer.</span>
+            <span class="animated-item">a User Researcher.</span>
+            <span class="animated-item">a Usability Engineer.</span>
+          </div>
+        </div>
+        <div class="about-me">
+          <div class="about-me-text">
+            <p>UX designer from Heidelberg with an affinity for user-centred digital products.<br><br>
+              I have been working in UX since 2016, helping teams to design interfaces that not only look good but also feel good.<br> 
+              With an analytical eye, creativity and a wealth of experience, I bring structure to chaos and focus on user needs – from research and prototyping to design systems.</p>
+            <a href="docs/CV_Sara-Fischer-2025_EN.pdf" target="_blank" class="btn-primary">View Resume</a> 
+          </div>
+          <img class="portrait" src="img/IMG_0022-square_high.jpg" alt="Portrait Sara Fischer">
+        </div>
+      </div>
+
+      <!-- Contact -->
+      <div class="section" id="contact">
+        <h3>Want to start a project or check out my portfolio? <br>Get in touch.</h3>
+        <div>
+          <a href="mailto:hello@sara-fischer.de" class="btn-secondary"><i class="fa-solid fa-at"></i>Send E-mail</a>
+          <a href="https://www.linkedin.com/in/sfischerux" class="btn-secondary" target="_blank"><i class="fa-brands fa-linkedin"></i>visit me on LinkedIn</a>
+        </div>
+        
+        <!-- Contact Form -->
+        <!-- 
+        <div class="contact-form">
+          <h4 style="margin-bottom: 20px; text-align: center;">Or write to me directly:</h4>
+          <form action="contact.php" method="post" id="contactFormEn">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name-en">Name *</label>
+                <input type="text" id="name-en" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email-en">Email *</label>
+                <input type="email" id="email-en" name="email" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject-en">Subject</label>
+              <input type="text" id="subject-en" name="subject" placeholder="Project Inquiry">
+            </div>
+            <div class="form-group">
+              <label for="message-en">Message *</label>
+              <textarea id="message-en" name="message" placeholder="Tell me about your project..." required></textarea>
+            </div>
+            <button type="submit" class="btn-submit">Send Message</button>
+          </form>
+        </div>
+        -->
+      </div>
+
+      <!-- Footer -->
+      <footer>
+        <h4>© Sara Fischer 2025</h4>
+        <div class="footer-links">
+          <a href="impressum.html" data-de="Impressum" data-en="Legal Notice">Impressum</a>
+          <a href="datenschutz.html" data-de="Datenschutz" data-en="Privacy Policy">Datenschutz</a>
+        </div>
+      </footer>
+    </div>
   </main>
-  
+
+  <script src="js/theme.js"></script>
+  <script src="js/language.js"></script>
+  <script src="js/contact.js"></script>
 </body>
 </html>

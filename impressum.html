@@ -1,57 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles/style.css" /> 
-    <link rel="stylesheet" type="text/css" href="styles/queries.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/theme.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap">
     <script src="https://kit.fontawesome.com/733c3e6546.js" crossorigin="anonymous"></script>
-    <title>Sara Fischer | UX Designer | User Researcher | Usability Engineer</title>
+    <title>Impressum | Sara Fischer | UX Designer</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
   </head>
   <body>
-    <header id="header">
-      <div class="header-content clearfix"> 
-        <a class="logo" href="index.html">sf.ux</a>
-        <div class="links-block">
-          <a class="links" href="projects.html">Projekte</a>
-          <a class="links" href="#contact">Kontakt</a>
+    
+    <!-- Theme Toggle -->
+    <div class="toggle-container">
+      <button class="language-btn" id="langBtn-en" data-de="EN" data-en="DE">DE</button>
+      <input type="checkbox" class="toggle-checkbox" id="themeToggle">
+      <label for="themeToggle" class="toggle-label-switch">
+        <span class="toggle-inner"></span>
+        <span class="toggle-switch-element"></span>
+      </label>
+    </div>
+
+    <main class="content">
+      <div class="legal-page">
+        
+        <!-- Header mit Zurück-Link -->
+        <div class="legal-header">
+          <a href="index.html" class="btn-secondary">
+            <i class="fa-solid fa-arrow-left"></i>
+            Zurück
+          </a>
+          <h1>Impressum</h1>
         </div>
-    </header>
-      <main class="content">
-        <div class="impressum section">
-          <h2>Impressum</h2>
-          <h4>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:</h4>
-            <p>Sara Fischer</p>
-            
+
+        <!-- Inhalt -->
+        <div class="legal-content">
+          
+          <section>
+            <h4>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:</h4>
+            <div class="contact-info">
+              <p><strong>Sara Fischer</strong></p>
+            </div>
+          </section>
+          
+          <section>
             <h4>Kontakt:</h4>
-            <a href="mailto:hello@sara-fischer.de">hello@sara-fischer.de</a><br>
-            <a href="tel:+49157 85 52 27 12">0157 85 52 27 12</a></p>
-            
+            <div class="contact-info">
+              <p><a href="mailto:hello@sara-fischer.de">hello@sara-fischer.de</a></p>
+              <p><a href="tel:+4915785522712">0157 85 52 27 12</a></p>
+            </div>
+          </section>
+          
+          <section>
             <h4>Angaben gemäß § 5 TMG:</h4>
-           <p>Sara Fischer<br>
-            Steinschleifenweg 16<br>
-            69198 Schriesheim<br>
-            Deutschland</p>
-            
+            <div class="contact-info">
+              <p><strong>Sara Fischer</strong><br>
+              Steinschleifenweg 16<br>
+              69198 Schriesheim<br>
+              Deutschland</p>
+            </div>
+          </section>
+          
+          <section>
             <h3>Haftung für Inhalte</h3>
-            <p>Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. 
-            Zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.</p>
-            
+            <p>Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.</p>
+            <p>Zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.</p>
+          </section>
+          
+          <section>
             <h3>Haftung für Links</h3>
-            <p>Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft.
-            Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.</p>
-            
+            <p>Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft.</p>
+            <p>Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.</p>
+          </section>
+          
+          <section>
             <h3>Urheberrecht</h3>
-            <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet.
-            Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.</p>
-          </div>
-          <footer>
-            <h4>© Sara Fischer 2024</h4>
-              <div class="footer-links">
-                <a href="impressum.html">Impressum</a>
-                <a href="datenschutz.html">Datenschutz</a>
-              </div>
-          </footer>
-      </main> 
-</body>
+            <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet.</p>
+            <p>Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.</p>
+          </section>
+
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer>
+        <h4>© Sara Fischer 2025</h4>
+        <div class="footer-links">
+          <a href="impressum.html">Impressum</a>
+          <a href="datenschutz.html">Datenschutz</a>
+        </div>
+      </footer>
+
+    </main>
+
+    <script src="js/theme.js"></script>
+  </body>
 </html>
