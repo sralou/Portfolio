@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles/fonts.css" />
+  <link rel="stylesheet" type="text/css" href="styles/theme.css" />
+  <script src="https://kit.fontawesome.com/733c3e6546.js" crossorigin="anonymous"></script>
+  <title>404 - Seite nicht gefunden | Sara Fischer | UX Designer</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+</head>
+<body>
+  
+  <!-- Theme Toggle & Language Toggle -->
+  <div class="toggle-container">
+    <button class="language-btn" id="langBtn-en" data-de="EN" data-en="DE">DE</button>
+    <input type="checkbox" class="toggle-checkbox" id="themeToggle">
+    <label for="themeToggle" class="toggle-label-switch">
+      <span class="toggle-inner"></span>
+      <span class="toggle-switch-element"></span>
+    </label>
+  </div>
+
+  <header id="header">
+    <div class="header-content clearfix"> 
+      <a class="logo" href="index.html">sara fischer | ux professional</a>
+       <div class="links-block">
+        <!-- <a class="links" href="projects.html" data-de="Projekte" data-en="Projects">Projekte</a>
+        <a class="links" href="#contact" data-de="Kontakt" data-en="Contact">Kontakt</a> -->
+      </div>
+    </div>
+  </header>
+  
+  <main class="content">
+    <!-- German Content -->
+    <div class="lang-content active" id="content-de">
+      <div class="error-page">
+        
+        <!-- Error Header -->
+        <div class="error-header">
+          <div class="error-number">404</div>
+          <h1>Seite nicht gefunden</h1>
+          <p class="error-description">
+            Die angeforderte Seite konnte leider nicht gefunden werden. 
+            Möglicherweise wurde sie verschoben, umbenannt oder existiert nicht mehr.
+          </p>
+        </div>
+
+        <!-- Error Actions -->
+        <div class="error-actions">
+          <a href="index.html" class="btn-primary">
+            <i class="fa-solid fa-home"></i>
+            Zur Startseite
+          </a>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer>
+        <h4>© Sara Fischer 2025</h4>
+        <div class="footer-links">
+          <a href="impressum.html" data-de="Impressum" data-en="Legal Notice">Impressum</a>
+          <a href="datenschutz.html" data-de="Datenschutz" data-en="Privacy Policy">Datenschutz</a>
+        </div>
+      </footer>
+    </div>
+
+    <!-- English Content -->
+    <div class="lang-content" id="content-en">
+      <div class="error-page">
+        
+        <!-- Error Header -->
+        <div class="error-header">
+          <div class="error-number">404</div>
+          <h1>Page Not Found</h1>
+          <p class="error-description">
+            The requested page could not be found. 
+            It may have been moved, renamed, or no longer exists.
+          </p>
+        </div>
+
+        <!-- Error Actions -->
+        <div class="error-actions">
+          <a href="index.html" class="btn-primary">
+            <i class="fa-solid fa-home"></i>
+            Go to Homepage
+          </a>
+          <button onclick="history.back()" class="btn-secondary">
+            <i class="fa-solid fa-arrow-left"></i>
+            Go Back
+          </button>
+        </div>
+
+        <!-- Helpful Links -->
+        <div class="helpful-links">
+          <h3>You might be interested in:</h3>
+          <div class="link-grid">
+            <a href="index.html#contact" class="help-link">
+              <i class="fa-solid fa-envelope"></i>
+              <span>Get in touch</span>
+            </a>
+            <a href="https://www.linkedin.com/in/sfischerux" target="_blank" class="help-link">
+              <i class="fa-brands fa-linkedin"></i>
+              <span>LinkedIn Profile</span>
+            </a>
+            <a href="docs/CV_Sara-Fischer-2025_EN.pdf" target="_blank" class="help-link">
+              <i class="fa-solid fa-file-pdf"></i>
+              <span>View Resume</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer>
+        <h4>© Sara Fischer 2025</h4>
+        <div class="footer-links">
+          <a href="impressum.html" data-de="Impressum" data-en="Legal Notice">Impressum</a>
+          <a href="datenschutz.html" data-de="Datenschutz" data-en="Privacy Policy">Datenschutz</a>
+        </div>
+      </footer>
+    </div>
+  </main>
+
+  <script src="js/theme.js"></script>
+  <script src="js/language.js"></script>
+</body>
+</html>
